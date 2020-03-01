@@ -69,6 +69,10 @@ a {
   letter-spacing: 0.29px;
 }
 
+.portfolio__tags li:nth-child(3) {
+  padding: 3px 5px 3px 6px;
+}
+
 .portfolio__tags li:hover {
   color: #dedede;
   border: 1px solid #dedede;
@@ -80,6 +84,10 @@ a {
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
   grid-column-gap: 20px;
+}
+
+.portfolio-works__item:nth-child(n + 13) {
+  display: none;
 }
 
 .portfolio-works__item img {
@@ -125,6 +133,8 @@ a {
   margin-bottom: 9px;
   font-size: 18px;
   font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
   color: #666d89;
 }
 
