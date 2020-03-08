@@ -20,24 +20,28 @@
                     nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
                     tortor mauris condimentum nibh.</p>
                 <div class="contacts-layout">
-                    <div class="contacts__form">
-                        <form action="">
-                            <input type="text" placeholder="Name (Required)">
-                            <input type="email" placeholder="Email (Required)">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" cols="30" rows="10"
-                                placeholder="Describe your project in detail..."></textarea>
+                    <div class="contacts-form">
+                        <form action="" method="post">
+                            <input type="text" placeholder="Name (Required)" class="contacts-form__name" required><br>
+                            <input type="email" placeholder="Email (Required)" class="contacts-form__email"
+                                required><br>
+                            <input type="text" placeholder="Subject" class="contacts-form__subject"><br>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."
+                                class="contacts-form__textarea"></textarea>
+                            <button type="submit" class="contacts-form__button">Submit</button>
                         </form>
                     </div>
-                    <div class="contacts__information">
-                        <h4>Contact Information</h4>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                    <div class="contacts-information">
+                        <h4 class="contacts-information__title">Contact Information</h4>
+                        <p class="contacts-information__description">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                            viver- ra nibh. Fusce vitae aliquam tellus.
                             Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
                             turpis, et consequat felis. </p>
                         <ul class="contacts-list">
-                            <li class="contacts-list__item">Elm St. 14/05 Lost City</li>
-                            <li class="contacts-list__item"></li>03528 331 86 35</li>
-                            <li class="contacts-list__item"></li>info@singolo.com</li>
+                            <li class="contacts-list__item location-icon"><a href="">Elm St. 14/05 Lost City</a></li>
+                            <li class="contacts-list__item tel-icon"><a href="tel:035283318635">03528 331 86 35</a></li>
+                            <li class="contacts-list__item email-icon"><a
+                                    href="mailto:info@singolo.com">info@singolo.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +52,7 @@
         <div class="wrapper">
             <div class="footer-content">
                 <div class="copyright">
-                    <span></span>
+                    <span>© Copyright 2013</span>
                 </div>
                 <ul class="footer-buttons">
                     <li class="social-buttons__item icon-fb"><a href="#"></a></li>
