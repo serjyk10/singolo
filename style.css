@@ -127,11 +127,66 @@ ul {
   justify-content: space-between;
 }
 
+.bg-blue {
+  background-color: #648bf0;
+  border-bottom: none;
+}
+
+.slider-resize {
+  padding: 53px 40px 31px 40px;
+}
+
 .slider-phone__vertical {
+  position: relative;
   margin-right: 74px;
 }
 .slider-phone__gorizontal {
+  position: relative;
   align-self: center;
+}
+
+.slider-phone__vertical .phone_button {
+  position: absolute;
+  top: 407px;
+  left: 87px;
+  display: block;
+}
+
+.slider-phone__vertical .screen-off {
+  position: absolute;
+  top: 65px;
+  left: 14px;
+  display: none;
+  width: 188px;
+  height: 333px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.slider-phone__vertical .display-off {
+  display: block;
+}
+
+.slider-phone__gorizontal .phone_button {
+  position: absolute;
+  top: 86px;
+  left: 9px;
+  display: block;
+}
+
+.slider-phone__gorizontal .screen-off {
+  position: absolute;
+  top: 13px;
+  left: 60px;
+  display: none;
+  width: 333px;
+  height: 188px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.slider-phone__gorizontal .display-off {
+  display: block;
 }
 
 /* Services */
