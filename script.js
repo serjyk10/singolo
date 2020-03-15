@@ -12,6 +12,15 @@ const SCREEN_GORIZONTAL = document.querySelector(".slider-phone__gorizontal .scr
 let SCREEN_STATUS_VERT = true;
 let SCREEN_STATUS_GOR = true;
 
+const TAGS_BLOCK = document.querySelector(".portfolio__tags");
+const TAGS = document.querySelectorAll(".portfolio__tags li");
+const BTN_PORTFOLIO_ALL = document.querySelector(".tag_all");
+const BTN_PORTFOLIO_WB = document.querySelector(".tag_wb");
+const BTN_PORTFOLIO_GD = document.querySelector(".tag_gd");
+const BTN_PORTFOLIO_ART = document.querySelector(".tag_art");
+const PORTFOLIO_ITEMS = document.querySelectorAll(".portfolio-works__item");
+const PORTFOLIO_BLOCK = document.querySelector(".portfolio-works");
+
 
 
 MENU.addEventListener("click", event => {
@@ -80,3 +89,59 @@ PHONE_BUTTON_GORIZ.addEventListener("click", event => {
         SCREEN_STATUS_GOR = true;
     }
 });
+
+BTN_PORTFOLIO_ALL.addEventListener("click", event => {
+    TAGS.forEach(el => {
+        el.classList.remove("active-tag");
+    });
+    BTN_PORTFOLIO_ALL.classList.add("active-tag");
+    PORTFOLIO_ITEMS[0].classList.remove("item-first");
+    PORTFOLIO_ITEMS[1].classList.remove("item-first");
+    PORTFOLIO_ITEMS[2].classList.remove("item-first");
+    PORTFOLIO_ITEMS[3].classList.remove("item-first");
+});
+
+BTN_PORTFOLIO_WB.addEventListener("click", event => {
+    TAGS.forEach(el => {
+        el.classList.remove("active-tag");
+    });
+    BTN_PORTFOLIO_WB.classList.add("active-tag");
+    PORTFOLIO_ITEMS[0].classList.remove("item-first");
+    PORTFOLIO_ITEMS[1].classList.remove("item-first");
+    PORTFOLIO_ITEMS[2].classList.remove("item-first");
+    PORTFOLIO_ITEMS[3].classList.remove("item-first");
+    PORTFOLIO_ITEMS[0].classList.add("item-first");
+});
+
+BTN_PORTFOLIO_GD.addEventListener("click", event => {
+    TAGS.forEach(el => {
+        el.classList.remove("active-tag");
+    });
+    BTN_PORTFOLIO_GD.classList.add("active-tag");
+    PORTFOLIO_ITEMS[0].classList.remove("item-first");
+    PORTFOLIO_ITEMS[1].classList.remove("item-first");
+    PORTFOLIO_ITEMS[2].classList.remove("item-first");
+    PORTFOLIO_ITEMS[3].classList.remove("item-first");
+    PORTFOLIO_ITEMS[0].classList.add("item-first");
+    PORTFOLIO_ITEMS[1].classList.add("item-first");
+});
+
+BTN_PORTFOLIO_ART.addEventListener("click", event => {
+    TAGS.forEach(el => {
+        el.classList.remove("active-tag");
+    });
+    BTN_PORTFOLIO_ART.classList.add("active-tag");
+    PORTFOLIO_ITEMS[0].classList.add("item-first");
+    PORTFOLIO_ITEMS[1].classList.add("item-first");
+    PORTFOLIO_ITEMS[2].classList.add("item-first");
+    PORTFOLIO_ITEMS[3].classList.add("item-first");
+});
+
+
+PORTFOLIO_BLOCK.addEventListener("click", event => {
+    PORTFOLIO_ITEMS.forEach(el => {
+        el.querySelector("img").classList.remove("border-item");
+        event.target.classList.add("border-item");
+    });
+});
+
