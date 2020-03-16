@@ -1,3 +1,3 @@
 # singolo
 
-https://serjyk10.github.io/singolo/#home
+https://serjyk10.github.io/singolo
