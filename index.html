@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="wrapper">
             <div class="header__content">
                 <div class="logo">
@@ -18,11 +18,11 @@
                 </div>
                 <nav class="header-navigation">
                     <ul class="navigation">
-                        <li class="navigation__item"><a href="#" class="active_item">HOME</a></li>
-                        <li class="navigation__item"><a href="#">SERVICES</a></li>
-                        <li class="navigation__item"><a href="#">PORTFOLIO</a></li>
-                        <li class="navigation__item"><a href="#">ABOUT</a> </li>
-                        <li class="navigation__item"><a href="#">CONTACT</a></li>
+                        <li class="navigation__item"><a href="#home" class="active_item">HOME</a></li>
+                        <li class="navigation__item"><a href="#services">SERVICES</a></li>
+                        <li class="navigation__item"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="navigation__item"><a href="#about">ABOUT</a> </li>
+                        <li class="navigation__item"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +52,7 @@
 
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper">
                 <div class="services-content">
                     <h2>Our Services</h2>
@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <div class="portfolio-content">
                     <h2 class="portfolio__title">Portfolio</h2>
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="wrapper">
                 <div class="about-us-content">
                     <h2 class="about-us__title">About Us</h2>
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contact">
             <div class="wrapper">
                 <div class="contacts-content">
                     <h2 class="contacts__title">Get a Quote</h2>
@@ -218,10 +218,16 @@
                                 <input type="text" placeholder="Subject" class="contacts-form__subject"
                                     id="subject"><br>
                                 <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Describe your project in detail..."
-                                    class="contacts-form__textarea"></textarea>
+                                    placeholder="Describe your project in detail..." class="contacts-form__textarea"
+                                    maxlength=100></textarea>
                                 <button type="submit" class="contacts-form__button">Submit</button>
                             </form>
+                            <div class="contacts-modal">
+                                <p>The letter was sent</p>
+                                <p class="contacts-modal__subject"></p>
+                                <p class="contacts-modal__describe"></p>
+                                <span class="modal-button">OK</span>
+                            </div>
                         </div>
                         <div class="contacts-information">
                             <h4 class="contacts-information__title">Contact Information</h4>
